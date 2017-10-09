@@ -1,0 +1,22 @@
+{
+    "name": "color-theme-name",
+    "displayName": "color-theme-name",
+    "description": "",
+    "version": "0.0.1",
+    "publisher": "oublisher",
+    "engines": {
+        "vscode": "^1.13.0"
+    },
+    "categories": [
+        "Themes"
+    ],
+    "contributes": {
+        "themes": [
+            {
+                "label": "username",
+                "uiTheme": "vs",
+                "path": "./themes/username-color-theme.json"
+            }
+        ]
+    }
+}
