@@ -1,4 +1,5 @@
 {
+	"name": "Yocta Light Theme",
 	"type": "light",
 	"colors": {
 		"editor.background": "#ffffff",

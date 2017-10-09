@@ -1,9 +1,8 @@
 {
-    "name": "color-theme-name",
-    "displayName": "color-theme-name",
-    "description": "",
+    "name": "yocta-light-theme",
+    "displayName": "Yocta Light Theme",
+    "description": "A light theme",
     "version": "0.0.1",
-    "publisher": "oublisher",
     "engines": {
         "vscode": "^1.13.0"
     },
@@ -13,9 +12,9 @@
     "contributes": {
         "themes": [
             {
-                "label": "username",
+                "label": "Yocta Light Theme",
                 "uiTheme": "vs",
-                "path": "./themes/username-color-theme.json"
+                "path": "./themes/yocta-light-theme.json"
             }
         ]
     }
