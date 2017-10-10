@@ -12,8 +12,84 @@
 		"sideBarTitle.foreground": "#6f6f6f"
 	},
 	"tokenColors": [
+    //#region GENERAL
 		{
 			"settings": {
+				"foreground": "#000000",
+				"background": "#ffffff"
+			}
+		},
+		{
+      "scope": "comment",
+      "settings": {
+        "foreground": "#808080",
+        "fontStyle": "italic"
+      }
+    },
+    {
+      "scope": "keyword",
+      "settings": {
+        "foreground": "#000080"
+      }
+    },
+    {
+      "scope": "string",
+      "settings": {
+        "foreground": "#008000"
+      }
+    },
+    {
+      "scope": "constant.numeric.decimal",
+      "settings": {
+        "foreground": "#0000ff"
+      }
+    },
+    {
+      "scope": [
+				"entity.name.type",
+				"entity.name.class",
+				"entity.other.inherited-class.js"
+			],
+      "settings": {
+				"foreground": "#000000",
+				"fontStyle": "underline"
+      }
+    },
+    //#endregion GENERAL
+
+    //#region JSDOC
+    {
+      "scope": "storage.type.class.jsdoc",
+      "settings": {
+        "foreground": "#808080",
+        "fontStyle": "italic underline bold"
+      }
+    },
+    {
+      "scope": "entity.name.type.instance.jsdoc",
+      "settings": {
+				"foreground": "#808080",
+				"fontStyle": "italic"
+      }
+    },
+		{
+      "scope": "variable.other.jsdoc",
+			"settings": {
+        "foreground": "#3d3d3d",
+        "fontStyle": "italic"
+      }
+    },
+    //#endregion JSDOC
+
+
+
+
+
+
+
+    //#region DEFAULTS
+    {
+      "settings": {
 				"foreground": "#000000ff",
 				"background": "#ffffffff"
 			}
@@ -47,23 +123,9 @@
 			}
 		},
 		{
-			"scope": "comment",
-			"settings": {
-				"foreground": "#008000"
-			}
-		},
-		{
 			"scope": "constant.language",
 			"settings": {
 				"foreground": "#0000ff"
-			}
-		},
-		{
-			"scope": [
-				"constant.numeric"
-			],
-			"settings": {
-				"foreground": "#09885a"
 			}
 		},
 		{
@@ -228,12 +290,6 @@
 			}
 		},
 		{
-			"scope": "string",
-			"settings": {
-				"foreground": "#a31515"
-			}
-		},
-		{
 			"scope": [
 				"string.comment.buffered.block.jade",
 				"string.quoted.jade",
@@ -274,9 +330,7 @@
 		},
 		{
 			"name": "Reset JavaScript string interpolation expression",
-			"scope": [
-				"meta.template.expression"
-			],
+      "scope": ["meta.template.expression"],
 			"settings": {
 				"foreground": "#000000"
 			}
@@ -406,8 +460,6 @@
 				"meta.return-type",
 				"support.class",
 				"support.type",
-				"entity.name.type",
-				"entity.name.class",
 				"storage.type.cs",
 				"storage.type.generic.cs",
 				"storage.type.modifier.cs",
@@ -565,5 +617,6 @@
 				"foreground": "#800080"
 			}
 		}
+    //#endregion DEFAULTS
 	]
 }
