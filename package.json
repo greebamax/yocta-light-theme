@@ -2,6 +2,7 @@
     "name": "yocta-light-theme",
     "displayName": "Yocta Light Theme",
     "description": "A light theme",
+    "publisher": "",
     "version": "0.0.1",
     "engines": {
         "vscode": "^1.13.0"
