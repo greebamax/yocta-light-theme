@@ -27,15 +27,9 @@
       }
     },
     {
-      "scope": "keyword",
-      "settings": {
-        "foreground": "#000080"
-      }
-    },
-    {
       "scope": "string",
       "settings": {
-        "foreground": "#008000"
+				"foreground": "#008000"
       }
     },
     {
@@ -54,6 +48,31 @@
 				"foreground": "#000000",
 				"fontStyle": "underline"
       }
+		},
+		{
+			"scope": [
+				"keyword",
+				"keyword.control",
+				"source"
+			],
+			"settings": {
+				"foreground": "#0000ff"
+			}
+		},
+		{
+      "scope": "variable.parameter",
+			"settings": {
+				"foreground": "#000000",
+				"fontStyle": "underline"
+      }
+    },
+		{
+      "scope": [
+				"meta.method.declaration"
+			],
+			"settings": {
+				"foreground": "#000000"
+      }
     },
     //#endregion GENERAL
 
@@ -61,8 +80,8 @@
     {
       "scope": "storage.type.class.jsdoc",
       "settings": {
-        "foreground": "#808080",
-        "fontStyle": "italic underline bold"
+        "foreground": "#3d3d3d",
+        "fontStyle": "italic underline"
       }
     },
     {
@@ -73,7 +92,10 @@
       }
     },
 		{
-      "scope": "variable.other.jsdoc",
+      "scope": [
+				"variable.other.jsdoc",
+				"source.embedded.js"
+			],
 			"settings": {
         "foreground": "#3d3d3d",
         "fontStyle": "italic"
@@ -88,22 +110,6 @@
 
 
     //#region DEFAULTS
-    {
-      "settings": {
-				"foreground": "#000000ff",
-				"background": "#ffffffff"
-			}
-		},
-		{
-			"scope": [
-				"meta.embedded",
-        "source.groovy.embedded"
-			],
-			"settings": {
-				"foreground": "#000000ff",
-				"background": "#ffffffff"
-			}
-		},
 		{
 			"scope": "emphasis",
 			"settings": {
@@ -272,18 +278,6 @@
 			}
 		},
 		{
-			"scope": "storage",
-			"settings": {
-				"foreground": "#0000ff"
-			}
-		},
-		{
-			"scope": "storage.type",
-			"settings": {
-				"foreground": "#0000ff"
-			}
-		},
-		{
 			"scope": "storage.modifier",
 			"settings": {
 				"foreground": "#0000ff"
@@ -369,18 +363,6 @@
 			}
 		},
 		{
-			"scope": "keyword",
-			"settings": {
-				"foreground": "#0000ff"
-			}
-		},
-		{
-			"scope": "keyword.control",
-			"settings": {
-				"foreground": "#0000ff"
-			}
-		},
-		{
 			"scope": "keyword.operator",
 			"settings": {
 				"foreground": "#000000"
@@ -446,7 +428,6 @@
 		{
 			"name": "Function declarations",
 			"scope": [
-				"entity.name.function",
 				"support.function",
 				"support.constant.handlebars"
 			],
@@ -495,13 +476,6 @@
 			],
 			"settings": {
 				"foreground": "#267f99"
-			}
-		},
-		{
-			"name": "Control flow keywords",
-			"scope": "keyword.control",
-			"settings": {
-				"foreground": "#AF00DB"
 			}
 		},
 		{
