@@ -68,12 +68,34 @@
     },
 		{
       "scope": [
-				"meta.method.declaration"
+				"support.variable",
+				"meta.method.declaration",
+				"punctuation.terminator.statement",
+				"meta"
 			],
 			"settings": {
 				"foreground": "#000000"
       }
-    },
+		},
+		{
+      "scope": [
+				"entity.name.function"
+			],
+			"settings": {
+				"foreground": "#7A7A43"
+      }
+		},
+		{
+      "scope": [
+				"meta.object-literal.key",
+				"meta.objectliteral.member",
+				"meta.export.default"
+			],
+			"settings": {
+				"foreground": "#660E7A"
+      }
+		},
+
     //#endregion GENERAL
 
     //#region JSDOC
@@ -476,27 +498,6 @@
 			],
 			"settings": {
 				"foreground": "#267f99"
-			}
-		},
-		{
-			"name": "Variable and parameter name",
-			"scope": [
-				"variable",
-				"meta.definition.variable.name",
-				"support.variable"
-			],
-			"settings": {
-				"foreground": "#001080"
-			}
-		},
-		{
-			"name": "Object keys, TS grammar specific",
-			"scope": [
-				"meta.object-literal.key",
-				"meta.object-literal.key entity.name.function"
-			],
-			"settings": {
-				"foreground": "#001080"
 			}
 		},
 		{
